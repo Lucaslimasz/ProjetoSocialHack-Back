@@ -1,0 +1,72 @@
+
+
+ANOTAÇÕES OMNISTACK 11.0
+
+// pega através do request e responde através do response
+// 
+// Metodos HTTP
+// 
+// GET: Buscar/listar uma informação no back-end
+// POST: Criar uma informação no back-end
+// PUT: Alterar uma informação no back-end
+// DELETE: Deletar uma informação no back-end
+// 
+// TIPOS DE PARAMETOS:
+// 
+// Query Params: Parâmetros nomeados enviados na rota após "?" (Filtros, Paginação)
+// Route Params: Parâmetros utilizados para identificar recursos
+// Request Body: Corpo da requisição, utilizado para criar ou alterar users
+// 
+// 
+// Driver: SELECT * FROM users
+// Query Builder: Table('users).select('*').where()
+// 
+// 
+
+
+**********PASSO A PASSO PARA APLICAÇÃO CRUD**********
+
+1º conexão do index.js para o localhost 3333
+
+2º criar as migrações
+
+3º rotacionar no arquivo de routes para os controller
+
+4º controller -> vem todas as funcionalidades
+
+
+*******************************************************
+
+
+1º instalação - npm install -y
+    ele cria o package par ao projeto
+
+2º instalação - npm install express
+    express é um modulo 
+    
+3º nodemon - npm install nodemon -D
+    nodemon serve pra n ficar parando o servidor sempre qeu alterar algo
+
+4º knext - npm install knext
+    para a instalação do BD
+
+5º sqlite3 - npm install sqlite3
+    instalação do BD
+
+6º npx knex init
+    cria um arquivo pra conectar com o banco 
+
+7º migrations - npx knex migrate:make nomedatabela
+    cria a migração
+
+8º criar tablea no arquivo da database
+
+9º migrate - npx knex migrate:latest 
+    cria a tabela no banco
+
+10º cors - npm install cors
+    modo de segurança
+
+PARA SUBIR PRA O GIT TEM QUE IGNORAR
+O NODE_MODULE
+E NA HORA DO CLONE É SÓ USAR UM NPM INSTALL
